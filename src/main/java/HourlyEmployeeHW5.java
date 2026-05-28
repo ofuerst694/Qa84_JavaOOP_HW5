@@ -5,13 +5,18 @@ public class HourlyEmployeeHW5 extends Employee {
 
     public HourlyEmployeeHW5() {}
 
-    public HourlyEmployeeHW5(String name,
-                             String jobtitel, double payRate,
-                             double hourWorked) {
-        super(name, jobtitel);
-        this.payRate = payRate;
-        this.hourWorked = hourWorked;
+    @Override
+    public double calculatePay() {
+        return payRate * hourWorked;//uslovie
     }
+
+//    public HourlyEmployeeHW5(String name,
+//                             String jobtitel, double payRate,
+//                             double hourWorked) {
+//        super(name, jobtitel);
+//        this.payRate = payRate;
+//        this.hourWorked = hourWorked;
+//    }
 
     public double getPayRate() {
         return payRate;
@@ -27,7 +32,8 @@ public class HourlyEmployeeHW5 extends Employee {
     }
 
     public void setHourWorked(double hourWorked) {
-        if (hourWorked > 0)
+        if (hourWorked >= 0)
         this.hourWorked = hourWorked;
     }
+
 }

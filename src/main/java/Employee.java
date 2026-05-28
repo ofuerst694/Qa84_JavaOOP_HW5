@@ -1,14 +1,14 @@
-public class Employee {
+public abstract class Employee {
     private String name;
     private String jobtitel;
 
     public Employee() {}
 
-    public Employee(String name, String jobtitel) {
-        super();
-        this.name = name;
-        this.jobtitel = jobtitel;
-    }
+//    public Employee(String name, String jobtitel) {
+//        super();
+//        this.name = name;
+//        this.jobtitel = jobtitel;
+//    }
 
     public String getName() {
         return name;
@@ -28,11 +28,11 @@ public class Employee {
         this.jobtitel = jobtitel;
     }
 
-    @Override
-    public String toString() {
-        return "Name: " + name
-                + ", Jobtitel: " + jobtitel;
-    }
+//    @Override
+//    public String toString() {
+//        return "Name: " + name
+//                + ", Jobtitel: " + jobtitel;
+//    }
 
     public abstract double calculatePay();
 }

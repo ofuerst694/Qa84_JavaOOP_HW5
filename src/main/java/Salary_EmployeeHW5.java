@@ -3,12 +3,17 @@ public class Salary_EmployeeHW5 extends Employee {
 
     public Salary_EmployeeHW5() {}
 
-    public Salary_EmployeeHW5(String name,
-                              String jobtitel,
-                              double weeklySalary) {
-        super(name, jobtitel);
-        this.weeklySalary = weeklySalary;
+    @Override
+    public double calculatePay() {
+        return weeklySalary;
     }
+
+//    public Salary_EmployeeHW5(String name,
+//                              String jobtitel,
+//                              double weeklySalary) {
+//        super(name, jobtitel);
+//        this.weeklySalary = weeklySalary;
+//    }
 
     public double getWeeklySalary() {
         return weeklySalary;
@@ -19,15 +24,15 @@ public class Salary_EmployeeHW5 extends Employee {
         this.weeklySalary = weeklySalary;
     }
 
-    @Override
-    public String toString() {
-        return super.toString()
-                + "WeeklySalary: " + weeklySalary;
+//    @Override
+//    public String toString() {
+//        return super.toString()
+//                + "WeeklySalary: " + weeklySalary;
     }
 
-    @Override
-    public double calculatePay() {
-        double weeklySalary = super.getWeekly();
-        return weeklySalary;
-    }
-}
+//    @Override
+//    public double calculatePay() {
+//        double weeklySalary = super.getweeklySalary();
+//        return weeklySalary;
+//    }
+
