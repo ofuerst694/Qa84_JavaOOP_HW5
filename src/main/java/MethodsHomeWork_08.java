@@ -8,6 +8,7 @@ public class MethodsHomeWork_08 {
     }
     /*
     s-> "Hello Course QA 84"
+
          01234 012345 01 01
          output:
          HCQ8
